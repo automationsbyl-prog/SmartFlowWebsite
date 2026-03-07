@@ -1,26 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- German Pages -->
   <url>
     <loc>https://smartflow.bayern/</loc>
-    <lastmod>2026-03-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartflow.bayern/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartflow.bayern/en/"/>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://smartflow.bayern/impressum.html</loc>
-    <lastmod>2026-03-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartflow.bayern/impressum.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartflow.bayern/en/legal-notice.html"/>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://smartflow.bayern/datenschutz.html</loc>
-    <lastmod>2026-03-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartflow.bayern/datenschutz.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartflow.bayern/en/privacy-policy.html"/>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://smartflow.bayern/agb.html</loc>
-    <lastmod>2026-03-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartflow.bayern/agb.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartflow.bayern/en/terms.html"/>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- English Pages -->
+  <url>
+    <loc>https://smartflow.bayern/en/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartflow.bayern/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartflow.bayern/en/"/>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://smartflow.bayern/en/legal-notice.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartflow.bayern/impressum.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartflow.bayern/en/legal-notice.html"/>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://smartflow.bayern/en/privacy-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartflow.bayern/datenschutz.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartflow.bayern/en/privacy-policy.html"/>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://smartflow.bayern/en/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smartflow.bayern/agb.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smartflow.bayern/en/terms.html"/>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

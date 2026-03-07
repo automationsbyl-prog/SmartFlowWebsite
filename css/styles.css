@@ -372,6 +372,34 @@ ul, ol {
   display: none;
 }
 
+/* Language Toggle */
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  transition: var(--transition-fast);
+}
+
+.lang-toggle:hover {
+  background: var(--color-border);
+  color: var(--color-text);
+}
+
+.lang-current {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.lang-separator {
+  opacity: 0.5;
+}
+
 .mobile-menu-btn {
   display: none;
   flex-direction: column;
@@ -867,8 +895,8 @@ ul, ol {
 .process-step {
   display: flex;
   gap: var(--space-lg);
-  opacity: 0;
-  transform: translateY(20px);
+  opacity: 1;
+  transform: translateY(0);
   transition: var(--transition-slow);
 }
 
