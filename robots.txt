@@ -1,0 +1,6 @@
+# robots.txt for smartflow.bayern
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://smartflow.bayern/sitemap.xml

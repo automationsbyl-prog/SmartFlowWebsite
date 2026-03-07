@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Seite nicht gefunden - SmartFlow">
+  <meta name="robots" content="noindex, nofollow">
+  <title>404 - Seite nicht gefunden | SmartFlow</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Manrope:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      text-align: center;
+    }
+    .error-content {
+      max-width: 600px;
+    }
+    .error-code {
+      font-family: 'Space Mono', monospace;
+      font-size: clamp(6rem, 20vw, 12rem);
+      font-weight: 700;
+      line-height: 1;
+      background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-blue) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 1rem;
+    }
+    .error-title {
+      font-size: clamp(1.5rem, 4vw, 2rem);
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+    }
+    .error-message {
+      color: var(--text-secondary);
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+    }
+    .error-actions {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Effects -->
+  <div class="bg-effects" aria-hidden="true">
+    <div class="gradient-mesh"></div>
+    <div class="grid-lines"></div>
+    <div class="grain-overlay"></div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="header" role="banner">
+    <nav class="nav" role="navigation" aria-label="Hauptnavigation">
+      <a href="index.html" class="logo" aria-label="SmartFlow - Zur Startseite">
+        <svg class="logo-icon" viewBox="0 0 48 48" width="40" height="40" aria-hidden="true">
+          <circle cx="24" cy="24" r="22" fill="#1E3A5F"/>
+          <path d="M12 24 C12 18, 18 14, 24 14 C30 14, 36 18, 36 24 C36 30, 30 34, 24 34" stroke="#00D9FF" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <circle cx="24" cy="34" r="3" fill="#00D9FF"/>
+        </svg>
+        <span class="logo-text">SmartFlow</span>
+      </a>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Theme wechseln" type="button">
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          </svg>
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Error Content -->
+  <main class="error-page">
+    <div class="error-content">
+      <div class="error-code">404</div>
+      <h1 class="error-title">Seite nicht gefunden</h1>
+      <p class="error-message">
+        Die angeforderte Seite existiert leider nicht oder wurde verschoben.
+        Keine Sorge - auch wir optimieren manchmal unsere Prozesse.
+      </p>
+      <div class="error-actions">
+        <a href="index.html" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+          Zur Startseite
+        </a>
+        <a href="index.html#contact" class="btn btn-secondary">Kontakt aufnehmen</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>

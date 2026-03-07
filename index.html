@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="SmartFlow - Prozessoptimierung, Digitalisierung und Automatisierung für Immobilien, Handwerk, Konzerne und Gastronomie.">
+  <meta name="keywords"
+    content="Prozessoptimierung, Digitalisierung, Automatisierung, Immobilien, Handwerk, Konzerne, Restaurants, Beratung">
+  <title>SmartFlow | Prozesse optimieren. Digital denken. Automatisiert handeln.</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://smartflow.bayern/">
+  <meta property="og:title" content="SmartFlow | Prozesse optimieren. Digital denken. Automatisiert handeln.">
+  <meta property="og:description"
+    content="SmartFlow - Prozessoptimierung, Digitalisierung und Automatisierung für Immobilien, Handwerk, Konzerne und Gastronomie.">
+  <meta property="og:image" content="https://smartflow.bayern/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SmartFlow | Prozesse optimieren. Digital denken. Automatisiert handeln.">
+  <meta name="twitter:description"
+    content="SmartFlow - Prozessoptimierung, Digitalisierung und Automatisierung für Immobilien, Handwerk, Konzerne und Gastronomie.">
+  <meta name="twitter:image" content="https://smartflow.bayern/assets/og-image.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Manrope:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+</head>
+
+<body>
+  <!-- =====================================================
+       Background Effects
+       ===================================================== -->
+  <div class="bg-effects" aria-hidden="true">
+    <div class="gradient-mesh"></div>
+    <div class="grid-lines"></div>
+    <div class="grain-overlay"></div>
+  </div>
+
+  <!-- =====================================================
+       Navigation
+       ===================================================== -->
+  <header class="header" role="banner">
+    <nav class="nav" role="navigation" aria-label="Hauptnavigation">
+      <a href="#" class="logo" aria-label="SmartFlow - Zur Startseite">
+        <svg class="logo-icon" viewBox="0 0 48 48" width="40" height="40" aria-hidden="true">
+          <circle cx="24" cy="24" r="22" fill="#1E3A5F" />
+          <path d="M12 24 C12 18, 18 14, 24 14 C30 14, 36 18, 36 24 C36 30, 30 34, 24 34" stroke="#00D9FF"
+            stroke-width="3" fill="none" stroke-linecap="round" />
+          <circle cx="24" cy="34" r="3" fill="#00D9FF" />
+        </svg>
+        <span class="logo-text">SmartFlow</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#hero" class="nav-link active">Start</a></li>
+        <li><a href="#branchen" class="nav-link">Branchen</a></li>
+        <li><a href="#services" class="nav-link">Leistungen</a></li>
+        <li><a href="#results" class="nav-link">Ergebnisse</a></li>
+        <li><a href="#about" class="nav-link">Über uns</a></li>
+        <li><a href="#contact" class="nav-link">Kontakt</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Theme wechseln" type="button">
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <circle cx="12" cy="12" r="5" />
+            <path
+              d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+          </svg>
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
+
+        <button class="mobile-menu-btn" aria-label="Menü öffnen" aria-expanded="false" type="button">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" hidden>
+      <ul class="mobile-nav-links">
+        <li><a href="#hero" class="mobile-nav-link">Start</a></li>
+        <li><a href="#branchen" class="mobile-nav-link">Branchen</a></li>
+        <li><a href="#services" class="mobile-nav-link">Leistungen</a></li>
+        <li><a href="#results" class="mobile-nav-link">Ergebnisse</a></li>
+        <li><a href="#about" class="mobile-nav-link">Über uns</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Kontakt</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- =====================================================
+       Hero Section
+       ===================================================== -->
+  <section id="hero" class="hero-section">
+    <div class="hero-container">
+      <div class="hero-content">
+        <span class="hero-badge">Beratung für die digitale Zukunft</span>
+        <h1 class="hero-title">
+          Prozesse optimieren.<br>
+          <span class="text-gradient">Digital denken.</span><br>
+          Automatisiert handeln.
+        </h1>
+        <p class="hero-subtitle">
+          Wir unterstützen Unternehmen aus Immobilien, Handwerk, Gastronomie und Konzernen
+          dabei, ihre Abläufe zu optimieren und zukunftsfähig zu gestalten.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">
+            <span>Jetzt Beratung anfragen</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="#branchen" class="btn btn-secondary">Branchen entdecken</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <canvas id="particle-canvas" aria-hidden="true"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       Trust Bar / Branchen Marquee
+       ===================================================== -->
+  <section class="trust-bar" aria-label="Unsere Branchen">
+    <div class="marquee-container">
+      <div class="marquee-track">
+        <div class="marquee-content">
+          <span class="trust-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
+            Immobilien
+          </span>
+          <span class="trust-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+            </svg>
+            Handwerk
+          </span>
+          <span class="trust-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+            </svg>
+            Konzerne
+          </span>
+          <span class="trust-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
+              <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
+              <line x1="6" y1="1" x2="6" y2="4" />
+              <line x1="10" y1="1" x2="10" y2="4" />
+              <line x1="14" y1="1" x2="14" y2="4" />
+            </svg>
+            Restaurants
+          </span>
+          <!-- Duplicate for seamless loop -->
+          <span class="trust-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
+            Immobilien
+          </span>
+          <span class="trust-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+            </svg>
+            Handwerk
+          </span>
+          <span class="trust-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+            </svg>
+            Konzerne
+          </span>
+          <span class="trust-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
+              <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
+              <line x1="6" y1="1" x2="6" y2="4" />
+              <line x1="10" y1="1" x2="10" y2="4" />
+              <line x1="14" y1="1" x2="14" y2="4" />
+            </svg>
+            Restaurants
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       Branchen Section
+       ===================================================== -->
+  <section id="branchen" class="branchen-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-label">Unsere Expertise</span>
+        <h2 class="section-title">Branchen, die wir transformieren</h2>
+        <p class="section-subtitle">Maßgeschneiderte Lösungen für Ihre spezifischen Herausforderungen</p>
+      </div>
+
+      <div class="branchen-grid">
+        <!-- Immobilien -->
+        <article class="branche-card" data-branche="immobilien">
+          <div class="branche-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
+          </div>
+          <div class="branche-content">
+            <h3>Immobilienverwaltung optimieren</h3>
+            <p class="branche-description">
+              Digitale Transformation für Hausverwaltungen, Makler und Immobilienunternehmen.
+            </p>
+            <div class="branche-challenges">
+              <h4>Herausforderungen:</h4>
+              <ul>
+                <li>Mieterverwaltung & Kommunikation</li>
+                <li>Objektdokumentation & Wartungsplanung</li>
+                <li>Vertragsmanagement & Buchhaltung</li>
+              </ul>
+            </div>
+            <div class="branche-solutions">
+              <h4>Unsere Lösungen:</h4>
+              <ul>
+                <li>Digitale Verwaltungsplattformen</li>
+                <li>Automatisierte Mieter-Kommunikation</li>
+                <li>Integrierte Buchhaltungssysteme</li>
+              </ul>
+            </div>
+            <div class="branche-metrics">
+              <span class="metric"><strong>20%</strong> Zeitersparnis</span>
+              <span class="metric"><strong>30%</strong> weniger Fehler</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Handwerk -->
+        <article class="branche-card" data-branche="handwerk">
+          <div class="branche-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path
+                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+            </svg>
+          </div>
+          <div class="branche-content">
+            <h3>Handwerksbetriebe digitalisieren</h3>
+            <p class="branche-description">
+              Effiziente Prozesse für Elektriker, Installateure, Maler und alle Gewerke.
+            </p>
+            <div class="branche-challenges">
+              <h4>Herausforderungen:</h4>
+              <ul>
+                <li>Auftragserfassung & Dokumentation</li>
+                <li>Terminplanung & Routenoptimierung</li>
+                <li>Materialbestellung & Lagerhaltung</li>
+              </ul>
+            </div>
+            <div class="branche-solutions">
+              <h4>Unsere Lösungen:</h4>
+              <ul>
+                <li>Mobile Auftragserfassung per Tablet</li>
+                <li>Automatisierte Tourenplanung</li>
+                <li>Echtzeit-Dashboard für alle Aufträge</li>
+              </ul>
+            </div>
+            <div class="branche-metrics">
+              <span class="metric"><strong>25%</strong> Zeitersparnis</span>
+              <span class="metric"><strong>35%</strong> weniger Fehler</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Konzerne -->
+        <article class="branche-card" data-branche="konzerne">
+          <div class="branche-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+            </svg>
+          </div>
+          <div class="branche-content">
+            <h3>Unternehmensprozesse skalieren</h3>
+            <p class="branche-description">
+              Strukturierte Optimierung für mittelständische und große Unternehmen.
+            </p>
+            <div class="branche-challenges">
+              <h4>Herausforderungen:</h4>
+              <ul>
+                <li>Abteilungsübergreifende Abstimmung</li>
+                <li>Legacy-Systeme & Datensilos</li>
+                <li>Komplexe Freigabeprozesse</li>
+              </ul>
+            </div>
+            <div class="branche-solutions">
+              <h4>Unsere Lösungen:</h4>
+              <ul>
+                <li>Prozessanalyse & Engpass-Identifikation</li>
+                <li>Schnittstellenoptimierung</li>
+                <li>Change-Management-Begleitung</li>
+              </ul>
+            </div>
+            <div class="branche-metrics">
+              <span class="metric"><strong>15%</strong> Zeitersparnis</span>
+              <span class="metric"><strong>25%</strong> weniger Fehler</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Restaurants -->
+        <article class="branche-card" data-branche="restaurants">
+          <div class="branche-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
+              <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
+              <line x1="6" y1="1" x2="6" y2="4" />
+              <line x1="10" y1="1" x2="10" y2="4" />
+              <line x1="14" y1="1" x2="14" y2="4" />
+            </svg>
+          </div>
+          <div class="branche-content">
+            <h3>Gastronomie modernisieren</h3>
+            <p class="branche-description">
+              Digitale Lösungen für Restaurants, Cafés, Catering und Hotellerie.
+            </p>
+            <div class="branche-challenges">
+              <h4>Herausforderungen:</h4>
+              <ul>
+                <li>Bestellmanagement & Küche-Service-Abstimmung</li>
+                <li>Lagerverwaltung & Wareneinsatz</li>
+                <li>Personalplanung & Schichtmanagement</li>
+              </ul>
+            </div>
+            <div class="branche-solutions">
+              <h4>Unsere Lösungen:</h4>
+              <ul>
+                <li>Digitale Bestellsysteme (POS)</li>
+                <li>Automatisierte Inventarverwaltung</li>
+                <li>Intelligente Schichtplanung</li>
+              </ul>
+            </div>
+            <div class="branche-metrics">
+              <span class="metric"><strong>30%</strong> Zeitersparnis</span>
+              <span class="metric"><strong>40%</strong> weniger Fehler</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       Services Section
+       ===================================================== -->
+  <section id="services" class="services-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-label">Was wir bieten</span>
+        <h2 class="section-title">Unsere Kernleistungen</h2>
+        <p class="section-subtitle">Drei Säulen für Ihren unternehmerischen Erfolg</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1: Prozessoptimierung -->
+        <article class="service-card">
+          <div class="service-number">01</div>
+          <div class="service-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 20V10" />
+              <path d="M18 20V4" />
+              <path d="M6 20v-4" />
+            </svg>
+          </div>
+          <h3>Prozessoptimierung</h3>
+          <p>Wir analysieren Ihre bestehenden Abläufe, identifizieren Engpässe und entwickeln effizientere Strukturen.
+          </p>
+          <ul class="service-features">
+            <li>Ist-Analyse & Prozessmapping</li>
+            <li>Engpass-Identifikation</li>
+            <li>Workflow-Redesign</li>
+            <li>KPI-Definition & Monitoring</li>
+          </ul>
+        </article>
+
+        <!-- Service 2: Digitalisierung -->
+        <article class="service-card service-card-featured">
+          <div class="service-number">02</div>
+          <div class="service-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+              <line x1="8" y1="21" x2="16" y2="21" />
+              <line x1="12" y1="17" x2="12" y2="21" />
+            </svg>
+          </div>
+          <h3>Digitalisierung</h3>
+          <p>Von der Papierakte zum digitalen Workflow - wir begleiten Sie bei der vollständigen digitalen
+            Transformation.</p>
+          <ul class="service-features">
+            <li>Software-Auswahl & Implementierung</li>
+            <li>Datendigitalisierung</li>
+            <li>Cloud-Migration</li>
+            <li>Mitarbeiterschulung</li>
+          </ul>
+        </article>
+
+        <!-- Service 3: Automatisierung -->
+        <article class="service-card">
+          <div class="service-number">03</div>
+          <div class="service-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2v4" />
+              <path d="M12 18v4" />
+              <path d="M4.93 4.93l2.83 2.83" />
+              <path d="M16.24 16.24l2.83 2.83" />
+              <path d="M2 12h4" />
+              <path d="M18 12h4" />
+              <path d="M4.93 19.07l2.83-2.83" />
+              <path d="M16.24 7.76l2.83-2.83" />
+            </svg>
+          </div>
+          <h3>Automatisierung</h3>
+          <p>Wiederkehrende Aufgaben automatisieren, Fehler reduzieren und wertvolle Arbeitszeit für Wichtiges
+            freisetzen.</p>
+          <ul class="service-features">
+            <li>Workflow-Automatisierung</li>
+            <li>Schnittstellen-Integration</li>
+            <li>Automatische Reporting</li>
+            <li>KI-gestützte Prozesse</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       Process Section
+       ===================================================== -->
+  <section id="process" class="process-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-label">Unser Ansatz</span>
+        <h2 class="section-title">So arbeiten wir</h2>
+        <p class="section-subtitle">In vier klaren Schritten zum Erfolg</p>
+      </div>
+
+      <div class="process-steps">
+        <div class="process-step" data-step="1">
+          <div class="step-marker">
+            <span class="step-number">01</span>
+            <div class="step-line"></div>
+          </div>
+          <div class="step-content">
+            <h3>Analyse</h3>
+            <span class="step-keyword">verstehen</span>
+            <p>Wir verstehen Ihre aktuellen Prozesse, Herausforderungen und Ziele durch intensive Gespräche und
+              Prozess-Mapping.</p>
+          </div>
+        </div>
+
+        <div class="process-step" data-step="2">
+          <div class="step-marker">
+            <span class="step-number">02</span>
+            <div class="step-line"></div>
+          </div>
+          <div class="step-content">
+            <h3>Konzept</h3>
+            <span class="step-keyword">planen</span>
+            <p>Basierend auf der Analyse entwickeln wir ein maßgeschneidertes Konzept mit konkreten Maßnahmen und
+              Zeitplan.</p>
+          </div>
+        </div>
+
+        <div class="process-step" data-step="3">
+          <div class="step-marker">
+            <span class="step-number">03</span>
+            <div class="step-line"></div>
+          </div>
+          <div class="step-content">
+            <h3>Umsetzung</h3>
+            <span class="step-keyword">umsetzen</span>
+            <p>Wir implementieren die Lösungen gemeinsam mit Ihrem Team, schulen Mitarbeiter und begleiten den Go-Live.
+            </p>
+          </div>
+        </div>
+
+        <div class="process-step" data-step="4">
+          <div class="step-marker">
+            <span class="step-number">04</span>
+          </div>
+          <div class="step-content">
+            <h3>Optimierung</h3>
+            <span class="step-keyword">optimieren</span>
+            <p>Nach der Einführung messen wir Ergebnisse, optimieren kontinuierlich und stellen nachhaltigen Erfolg
+              sicher.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       Results Section
+       ===================================================== -->
+  <section id="results" class="results-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-label">Messbare Erfolge</span>
+        <h2 class="section-title">Was unsere Arbeit bewirkt</h2>
+        <p class="section-subtitle">Konkrete Ergebnisse aus unseren Projekten</p>
+      </div>
+
+      <!-- Hero Metrics -->
+      <div class="metrics-hero-grid">
+        <div class="metric-card metric-card-hero">
+          <div class="metric-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+          </div>
+          <div class="metric-gauge" role="img" aria-label="22 Prozent Zeitersparnis">
+            <svg class="radial-progress" viewBox="0 0 200 200" width="160" height="160">
+              <defs>
+                <linearGradient id="gaugeGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#00D9FF" />
+                  <stop offset="100%" stop-color="#0051FF" />
+                </linearGradient>
+              </defs>
+              <circle class="gauge-bg" cx="100" cy="100" r="85" fill="none" stroke="rgba(255,255,255,0.1)"
+                stroke-width="10" />
+              <circle class="gauge-fill" cx="100" cy="100" r="85" fill="none" stroke="url(#gaugeGradient1)"
+                stroke-width="10" stroke-linecap="round" stroke-dasharray="534" stroke-dashoffset="534"
+                transform="rotate(-90 100 100)" data-value="22" />
+            </svg>
+            <div class="gauge-center">
+              <span class="gauge-number" data-value="22">0</span>
+              <span class="gauge-unit">%</span>
+            </div>
+          </div>
+          <h3>Zeitersparnis</h3>
+          <p class="metric-context">Ø über alle Branchen</p>
+        </div>
+
+        <div class="metric-card metric-card-hero">
+          <div class="metric-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              <path d="m9 12 2 2 4-4" />
+            </svg>
+          </div>
+          <div class="metric-gauge" role="img" aria-label="32 Prozent Fehlerreduktion">
+            <svg class="radial-progress" viewBox="0 0 200 200" width="160" height="160">
+              <defs>
+                <linearGradient id="gaugeGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#00D9FF" />
+                  <stop offset="100%" stop-color="#0051FF" />
+                </linearGradient>
+              </defs>
+              <circle class="gauge-bg" cx="100" cy="100" r="85" fill="none" stroke="rgba(255,255,255,0.1)"
+                stroke-width="10" />
+              <circle class="gauge-fill" cx="100" cy="100" r="85" fill="none" stroke="url(#gaugeGradient2)"
+                stroke-width="10" stroke-linecap="round" stroke-dasharray="534" stroke-dashoffset="534"
+                transform="rotate(-90 100 100)" data-value="32" />
+            </svg>
+            <div class="gauge-center">
+              <span class="gauge-number" data-value="32">0</span>
+              <span class="gauge-unit">%</span>
+            </div>
+          </div>
+          <h3>Fehlerreduktion</h3>
+          <p class="metric-context">Durch Automatisierung</p>
+        </div>
+
+        <div class="metric-card metric-card-hero">
+          <div class="metric-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="12" y1="1" x2="12" y2="23" />
+              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+            </svg>
+          </div>
+          <div class="metric-gauge" role="img" aria-label="187 Prozent ROI">
+            <svg class="radial-progress" viewBox="0 0 200 200" width="160" height="160">
+              <defs>
+                <linearGradient id="gaugeGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#BFFF00" />
+                  <stop offset="100%" stop-color="#00FF88" />
+                </linearGradient>
+              </defs>
+              <circle class="gauge-bg" cx="100" cy="100" r="85" fill="none" stroke="rgba(255,255,255,0.1)"
+                stroke-width="10" />
+              <circle class="gauge-fill" cx="100" cy="100" r="85" fill="none" stroke="url(#gaugeGradient3)"
+                stroke-width="10" stroke-linecap="round" stroke-dasharray="534" stroke-dashoffset="534"
+                transform="rotate(-90 100 100)" data-value="93" />
+            </svg>
+            <div class="gauge-center">
+              <span class="gauge-number" data-value="187">0</span>
+              <span class="gauge-unit">%</span>
+            </div>
+          </div>
+          <h3>ROI</h3>
+          <p class="metric-context">Ø in 12 Monaten</p>
+        </div>
+      </div>
+
+      <!-- Detail Metrics -->
+      <div class="metrics-detail-grid">
+        <div class="metric-card metric-card-detail">
+          <div class="metric-value">
+            <span class="value-number" data-value="45">0</span>
+            <span class="value-unit">Std</span>
+          </div>
+          <p class="metric-label">Eingesparte Zeit pro Monat</p>
+        </div>
+        <div class="metric-card metric-card-detail">
+          <div class="metric-value">
+            <span class="value-number" data-value="20">0</span>
+            <span class="value-unit">k€</span>
+          </div>
+          <p class="metric-label">Ø Kosteneinsparung pro Jahr</p>
+        </div>
+        <div class="metric-card metric-card-detail">
+          <div class="metric-value">
+            <span class="value-number" data-value="4">0</span>
+            <span class="value-unit">Wo</span>
+          </div>
+          <p class="metric-label">Ø Implementierungszeit</p>
+        </div>
+        <div class="metric-card metric-card-detail">
+          <div class="metric-value">
+            <span class="value-number" data-value="95">0</span>
+            <span class="value-unit">%</span>
+          </div>
+          <p class="metric-label">Kundenzufriedenheit</p>
+        </div>
+      </div>
+
+      <!-- Branchen-Vergleich -->
+      <div class="benchmark-section">
+        <h3>Ergebnisse nach Branche</h3>
+
+        <div class="benchmark-item">
+          <div class="benchmark-label">
+            <span class="label-text">Immobilien</span>
+            <span class="label-value">20% Zeitersparnis</span>
+          </div>
+          <div class="benchmark-bar">
+            <div class="bar-fill" data-width="20"></div>
+          </div>
+        </div>
+
+        <div class="benchmark-item">
+          <div class="benchmark-label">
+            <span class="label-text">Handwerk</span>
+            <span class="label-value">25% Zeitersparnis</span>
+          </div>
+          <div class="benchmark-bar">
+            <div class="bar-fill" data-width="25"></div>
+          </div>
+        </div>
+
+        <div class="benchmark-item">
+          <div class="benchmark-label">
+            <span class="label-text">Konzerne</span>
+            <span class="label-value">15% Zeitersparnis</span>
+          </div>
+          <div class="benchmark-bar">
+            <div class="bar-fill" data-width="15"></div>
+          </div>
+        </div>
+
+        <div class="benchmark-item">
+          <div class="benchmark-label">
+            <span class="label-text">Restaurants</span>
+            <span class="label-value">30% Zeitersparnis</span>
+          </div>
+          <div class="benchmark-bar">
+            <div class="bar-fill bar-fill-accent" data-width="30"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Case Studies -->
+      <div class="case-studies-grid">
+        <h3 class="case-studies-title">Erfolgsgeschichten</h3>
+
+        <div class="case-study-card" data-expanded="false">
+          <div class="case-header">
+            <div class="case-industry">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              </svg>
+              <span>Immobilien</span>
+            </div>
+            <button class="expand-btn" aria-expanded="false" aria-label="Details anzeigen">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="12" y1="5" x2="12" y2="19" />
+                <line x1="5" y1="12" x2="19" y2="12" />
+              </svg>
+            </button>
+          </div>
+          <h4>Hausverwaltung mit 500+ Einheiten</h4>
+          <div class="case-metrics-preview">
+            <span class="preview-metric">-20% Bearbeitungszeit</span>
+            <span class="preview-metric">-30% Fehler</span>
+          </div>
+          <div class="case-details" hidden>
+            <p><strong>Herausforderung:</strong> Manuelle Mieterkommunikation, verstreute Dokumentation, aufwändige
+              Nebenkostenabrechnung.</p>
+            <p><strong>Lösung:</strong> Digitale Mieterportal-Einführung, automatisierte Kommunikation, zentrale
+              Dokumentenverwaltung.</p>
+            <p><strong>Ergebnis:</strong> 20% weniger Bearbeitungszeit, 30% weniger Fehler, deutlich zufriedenere
+              Mieter.</p>
+          </div>
+        </div>
+
+        <div class="case-study-card" data-expanded="false">
+          <div class="case-header">
+            <div class="case-industry">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+              </svg>
+              <span>Handwerk</span>
+            </div>
+            <button class="expand-btn" aria-expanded="false" aria-label="Details anzeigen">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="12" y1="5" x2="12" y2="19" />
+                <line x1="5" y1="12" x2="19" y2="12" />
+              </svg>
+            </button>
+          </div>
+          <h4>Elektrofachbetrieb mit 15 Mitarbeitern</h4>
+          <div class="case-metrics-preview">
+            <span class="preview-metric">-25% Fahrzeit</span>
+            <span class="preview-metric">€15k Einsparung</span>
+          </div>
+          <div class="case-details" hidden>
+            <p><strong>Herausforderung:</strong> Papierbasierte Auftragserfassung, ineffiziente Tourenplanung, keine
+              Echtzeit-Übersicht.</p>
+            <p><strong>Lösung:</strong> Mobile App für Monteure, GPS-basierte Routenoptimierung, digitales
+              Auftrags-Dashboard.</p>
+            <p><strong>Ergebnis:</strong> 25% weniger Fahrzeit, 35% weniger Dokumentationsfehler, €15k jährliche
+              Einsparung.</p>
+          </div>
+        </div>
+
+        <div class="case-study-card" data-expanded="false">
+          <div class="case-header">
+            <div class="case-industry">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+              </svg>
+              <span>Konzern</span>
+            </div>
+            <button class="expand-btn" aria-expanded="false" aria-label="Details anzeigen">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="12" y1="5" x2="12" y2="19" />
+                <line x1="5" y1="12" x2="19" y2="12" />
+              </svg>
+            </button>
+          </div>
+          <h4>Mittelständisches Produktionsunternehmen</h4>
+          <div class="case-metrics-preview">
+            <span class="preview-metric">-15% Durchlaufzeit</span>
+            <span class="preview-metric">8 Wochen Projekt</span>
+          </div>
+          <div class="case-details" hidden>
+            <p><strong>Herausforderung:</strong> Lange Abstimmungswege zwischen Abteilungen, manuelle Freigabeprozesse,
+              Datensilos.</p>
+            <p><strong>Lösung:</strong> Prozessanalyse, vereinfachte Workflows, Schnittstellenintegration zwischen ERP
+              und CRM.</p>
+            <p><strong>Ergebnis:</strong> 15% schnellere Durchlaufzeiten, verbesserte Zusammenarbeit, höhere
+              Mitarbeiterzufriedenheit.</p>
+          </div>
+        </div>
+
+        <div class="case-study-card" data-expanded="false">
+          <div class="case-header">
+            <div class="case-industry">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
+                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
+              </svg>
+              <span>Restaurant</span>
+            </div>
+            <button class="expand-btn" aria-expanded="false" aria-label="Details anzeigen">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="12" y1="5" x2="12" y2="19" />
+                <line x1="5" y1="12" x2="19" y2="12" />
+              </svg>
+            </button>
+          </div>
+          <h4>Restaurantkette mit 5 Standorten</h4>
+          <div class="case-metrics-preview">
+            <span class="preview-metric">-30% Wareneinsatz</span>
+            <span class="preview-metric">-40% Fehler</span>
+          </div>
+          <div class="case-details" hidden>
+            <p><strong>Herausforderung:</strong> Keine standortübergreifende Übersicht, manuelle Bestellungen, hoher
+              Warenschwund.</p>
+            <p><strong>Lösung:</strong> Zentrales POS-System, automatisierte Bestellvorschläge, Echtzeit-Inventar pro
+              Standort.</p>
+            <p><strong>Ergebnis:</strong> 30% geringerer Wareneinsatz, 40% weniger Bestellfehler, bessere
+              Personalplanung.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       About Section
+       ===================================================== -->
+  <section id="about" class="about-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-label">Wer wir sind</span>
+        <h2 class="section-title">Über SmartFlow</h2>
+        <p class="section-subtitle">Pragmatische Lösungen statt theoretischer Konzepte</p>
+      </div>
+
+      <div class="about-content">
+        <div class="about-text">
+          <p class="about-intro">
+            SmartFlow ist Ihr Partner für praxisnahe Prozessoptimierung.
+            Wir kombinieren branchenspezifisches Know-how mit modernen digitalen Lösungen.
+          </p>
+          <p>
+            Unser Team besteht aus erfahrenen Beratern mit Hintergrund in verschiedenen Branchen.
+            Wir verstehen die Herausforderungen von Immobilienverwaltungen genauso wie die von
+            Handwerksbetrieben, Konzernen oder der Gastronomie.
+          </p>
+        </div>
+
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2v4" />
+                <path d="m4.93 4.93 2.83 2.83" />
+                <path d="M2 12h4" />
+                <path d="m4.93 19.07 2.83-2.83" />
+                <path d="M12 18v4" />
+                <path d="m19.07 19.07-2.83-2.83" />
+                <path d="M22 12h-4" />
+                <path d="m19.07 4.93-2.83 2.83" />
+              </svg>
+            </div>
+            <h3>Pragmatisch</h3>
+            <p>Keine theoretischen Konzepte, sondern umsetzbare Lösungen, die im Alltag funktionieren.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            <h3>Partnerschaftlich</h3>
+            <p>Wir arbeiten mit Ihrem Team auf Augenhöhe und sorgen für nachhaltigen Wissenstransfer.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+                <path d="m9 12 2 2 4-4" />
+              </svg>
+            </div>
+            <h3>Nachhaltig</h3>
+            <p>Unsere Lösungen sind langfristig angelegt und wachsen mit Ihrem Unternehmen mit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       FAQ Section
+       ===================================================== -->
+  <section id="faq" class="faq-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-label">Häufige Fragen</span>
+        <h2 class="section-title">FAQ</h2>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Wie lange dauert ein typisches Projekt?</span>
+            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </summary>
+          <div class="faq-answer">
+            <p>Die Dauer hängt vom Projektumfang ab. Kleinere Optimierungen können in 2-4 Wochen umgesetzt werden,
+              umfassendere Digitalisierungsprojekte dauern typischerweise 6-12 Wochen. In einem ersten Gespräch geben
+              wir Ihnen eine realistische Einschätzung.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Für welche Unternehmensgrößen ist SmartFlow geeignet?</span>
+            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </summary>
+          <div class="faq-answer">
+            <p>Wir arbeiten sowohl mit kleinen Handwerksbetrieben ab 5 Mitarbeitern als auch mit mittelständischen
+              Unternehmen und Konzernen. Unsere Lösungen passen wir an Ihre spezifische Größe und Bedürfnisse an.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Was kostet eine Beratung?</span>
+            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </summary>
+          <div class="faq-answer">
+            <p>Das Erstgespräch ist kostenlos. Danach erstellen wir ein individuelles Angebot basierend auf Ihrem
+              Bedarf. Unsere Projekte starten typischerweise ab €5.000 für kleinere Optimierungen.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Müssen wir bestehende Software wechseln?</span>
+            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </summary>
+          <div class="faq-answer">
+            <p>Nicht unbedingt. Wir analysieren zunächst, ob Ihre bestehenden Tools optimal genutzt werden können. Oft
+              lassen sich durch bessere Konfiguration oder Schnittstellen große Verbesserungen erzielen, ohne komplett
+              neue Software einzuführen.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Wie läuft ein Erstgespräch ab?</span>
+            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </summary>
+          <div class="faq-answer">
+            <p>Im kostenlosen Erstgespräch (ca. 30 Minuten, telefonisch oder per Video) lernen wir Ihre Situation
+              kennen: Welche Prozesse sind aktuell problematisch? Was sind Ihre Ziele? Danach schätzen wir ein, ob und
+              wie wir helfen können.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       CTA Section
+       ===================================================== -->
+  <section class="cta-section">
+    <div class="section-container">
+      <div class="cta-content">
+        <h2>Bereit für effizientere Prozesse?</h2>
+        <p>Vereinbaren Sie jetzt ein kostenloses Erstgespräch und erfahren Sie, wie wir Ihr Unternehmen unterstützen
+          können.</p>
+        <a href="#contact" class="btn btn-primary btn-large">
+          <span>Kostenloses Erstgespräch</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       Contact Section
+       ===================================================== -->
+  <section id="contact" class="contact-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-label">Kontakt</span>
+        <h2 class="section-title">Sprechen Sie mit uns</h2>
+        <p class="section-subtitle">Wir freuen uns auf Ihre Anfrage</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Formspree: Ersetze YOUR_FORM_ID mit deiner Formspree-ID von https://formspree.io -->
+        <form class="contact-form" id="contact-form" action="https://formspree.io/f/mdawkewy" method="POST">
+          <div class="form-group">
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" required placeholder="Ihr Name">
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-Mail *</label>
+            <input type="email" id="email" name="email" required placeholder="ihre@email.de">
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Telefon</label>
+            <input type="tel" id="phone" name="phone" placeholder="+49 123 456789">
+          </div>
+
+          <div class="form-group">
+            <label for="company">Unternehmen</label>
+            <input type="text" id="company" name="company" placeholder="Ihr Unternehmen">
+          </div>
+
+          <div class="form-group">
+            <label for="branche">Branche</label>
+            <select id="branche" name="branche">
+              <option value="">Bitte wählen...</option>
+              <option value="immobilien">Immobilien</option>
+              <option value="handwerk">Handwerk</option>
+              <option value="konzern">Konzern / Mittelstand</option>
+              <option value="gastronomie">Gastronomie</option>
+              <option value="andere">Andere Branche</option>
+            </select>
+          </div>
+
+          <div class="form-group form-group-full">
+            <label for="message">Nachricht *</label>
+            <textarea id="message" name="message" required rows="5"
+              placeholder="Beschreiben Sie kurz Ihre aktuelle Situation und Ihre Ziele..."></textarea>
+          </div>
+
+          <div class="form-group form-group-full">
+            <button type="submit" class="btn btn-primary btn-full">
+              <span>Nachricht senden</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+            </button>
+          </div>
+        </form>
+
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h4>E-Mail</h4>
+              <a href="mailto:info@smartflow.immo">info@smartflow.immo</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h4>Telefon</h4>
+              <a href="tel:+491734487550">+49 173 4487550</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h4>Adresse</h4>
+              <p>Arulfsplatz 2<br>93047 Regensburg</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       Footer
+       ===================================================== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <svg class="logo-icon" viewBox="0 0 48 48" width="40" height="40">
+              <circle cx="24" cy="24" r="22" fill="#1E3A5F" />
+              <path d="M12 24 C12 18, 18 14, 24 14 C30 14, 36 18, 36 24 C36 30, 30 34, 24 34" stroke="#00D9FF"
+                stroke-width="3" fill="none" stroke-linecap="round" />
+              <circle cx="24" cy="34" r="3" fill="#00D9FF" />
+            </svg>
+            <span class="logo-text">SmartFlow</span>
+          </a>
+          <p class="footer-tagline">Prozesse optimieren. Digital denken. Automatisiert handeln.</p>
+        </div>
+
+        <nav class="footer-nav">
+          <div class="footer-nav-group">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#hero">Start</a></li>
+              <li><a href="#branchen">Branchen</a></li>
+              <li><a href="#services">Leistungen</a></li>
+              <li><a href="#results">Ergebnisse</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-nav-group">
+            <h4>Unternehmen</h4>
+            <ul>
+              <li><a href="#about">Über uns</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#contact">Kontakt</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-nav-group">
+            <h4>Rechtliches</h4>
+            <ul>
+              <li><a href="impressum.html">Impressum</a></li>
+              <li><a href="datenschutz.html">Datenschutz</a></li>
+              <li><a href="agb.html">AGB</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 SmartFlow. Alle Rechte vorbehalten.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
