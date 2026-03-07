@@ -923,7 +923,7 @@ ul, ol {
   font-size: var(--text-xs);
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--accent-blue);
+  color: var(--color-primary);
   margin-bottom: var(--space-xs);
   opacity: 0.85;
 }
