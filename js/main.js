@@ -519,24 +519,42 @@ function initFormValidation() {
     });
 
     if (isValid) {
-      // Simulate form submission
       const submitBtn = form.querySelector('button[type="submit"]');
       const originalText = submitBtn.innerHTML;
 
       submitBtn.disabled = true;
       submitBtn.innerHTML = '<span>Wird gesendet...</span>';
 
-      setTimeout(() => {
-        submitBtn.innerHTML = '<span>Nachricht gesendet!</span>';
-        submitBtn.style.background = 'var(--color-success)';
-
+      // Send form data to Formspree
+      const formData = new FormData(form);
+      fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      })
+      .then(response => {
+        if (response.ok) {
+          submitBtn.innerHTML = '<span>Nachricht gesendet!</span>';
+          submitBtn.style.background = 'var(--color-success)';
+          setTimeout(() => {
+            form.reset();
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalText;
+            submitBtn.style.background = '';
+          }, 2000);
+        } else {
+          throw new Error('Formular konnte nicht gesendet werden');
+        }
+      })
+      .catch(error => {
+        submitBtn.innerHTML = '<span>Fehler beim Senden</span>';
+        submitBtn.style.background = 'var(--color-error)';
         setTimeout(() => {
-          form.reset();
           submitBtn.disabled = false;
           submitBtn.innerHTML = originalText;
           submitBtn.style.background = '';
-        }, 2000);
-      }, 1500);
+        }, 3000);
+      });
     }
   });
 
