@@ -178,6 +178,7 @@ ul, ol {
   background: var(--gradient-mesh);
   opacity: 0.8;
   animation: meshFloat 20s ease-in-out infinite;
+  will-change: transform;
 }
 
 @keyframes meshFloat {
@@ -477,6 +478,7 @@ ul, ol {
 .btn-primary {
   background: var(--color-accent);
   color: #000;
+  will-change: transform;
 }
 
 .btn-primary:hover {
@@ -675,6 +677,7 @@ ul, ol {
   transition: var(--transition-normal);
   position: relative;
   overflow: hidden;
+  will-change: transform;
 }
 
 .branche-card::before {
@@ -810,6 +813,7 @@ ul, ol {
   padding: var(--space-xl);
   transition: var(--transition-normal);
   position: relative;
+  will-change: transform;
 }
 
 .service-card:hover {
@@ -1946,5 +1950,22 @@ ul, ol {
 
   .legal-content h3 {
     font-size: var(--text-lg);
+  }
+}
+
+/* =====================================================
+   Reduced Motion
+   ===================================================== */
+@media (prefers-reduced-motion: reduce) {
+  .gradient-mesh {
+    animation: none;
+  }
+
+  .marquee-track {
+    animation-duration: 60s;
+  }
+
+  * {
+    transition-duration: 0.01ms !important;
   }
 }

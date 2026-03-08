@@ -200,8 +200,7 @@ function initParticleCanvas() {
       if (this.y > canvas.height) this.y = 0;
     }
 
-    draw() {
-      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    draw(isDark) {
       ctx.fillStyle = isDark
         ? `rgba(0, 217, 255, ${this.opacity})`
         : `rgba(0, 81, 255, ${this.opacity})`;
@@ -221,17 +220,18 @@ function initParticleCanvas() {
   }
 
   // Draw connections between particles
-  function drawConnections() {
+  function drawConnections(isDark) {
     const maxDistance = 120;
-    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    const maxDistSq = maxDistance * maxDistance;
 
     for (let i = 0; i < particles.length; i++) {
       for (let j = i + 1; j < particles.length; j++) {
         const dx = particles[i].x - particles[j].x;
         const dy = particles[i].y - particles[j].y;
-        const distance = Math.sqrt(dx * dx + dy * dy);
+        const distSq = dx * dx + dy * dy;
 
-        if (distance < maxDistance) {
+        if (distSq < maxDistSq) {
+          const distance = Math.sqrt(distSq);
           const opacity = (1 - distance / maxDistance) * 0.3;
           ctx.strokeStyle = isDark
             ? `rgba(0, 217, 255, ${opacity})`
@@ -252,12 +252,13 @@ function initParticleCanvas() {
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
     particles.forEach(particle => {
       particle.update();
-      particle.draw();
+      particle.draw(isDark);
     });
 
-    drawConnections();
+    drawConnections(isDark);
     animationId = requestAnimationFrame(animate);
   }
 
@@ -684,17 +685,19 @@ function animateCounter(element, target) {
 /* =====================================================
    Header Scroll Effect
    ===================================================== */
-let lastScrollY = 0;
 const header = document.querySelector('.header');
+let scrollTicking = false;
 
 window.addEventListener('scroll', () => {
-  const currentScrollY = window.scrollY;
-
-  if (currentScrollY > 100) {
-    header.style.boxShadow = 'var(--shadow-md)';
-  } else {
-    header.style.boxShadow = '';
+  if (!scrollTicking) {
+    requestAnimationFrame(() => {
+      if (window.scrollY > 100) {
+        header.style.boxShadow = 'var(--shadow-md)';
+      } else {
+        header.style.boxShadow = '';
+      }
+      scrollTicking = false;
+    });
+    scrollTicking = true;
   }
-
-  lastScrollY = currentScrollY;
 }, { passive: true });
