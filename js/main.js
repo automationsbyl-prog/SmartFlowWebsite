@@ -670,7 +670,8 @@ function animateCounter(element, target) {
     const easeOut = 1 - Math.pow(1 - progress, 3);
 
     const current = Math.round(start + (target - start) * easeOut);
-    element.textContent = current;
+    const lang = document.documentElement.lang || 'de';
+    element.textContent = current.toLocaleString(lang === 'en' ? 'en-US' : 'de-DE');
 
     if (progress < 1) {
       requestAnimationFrame(update);

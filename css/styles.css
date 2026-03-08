@@ -648,6 +648,12 @@ ul, ol {
   100% { transform: translateX(-50%); }
 }
 
+@media (max-width: 768px) {
+  .marquee-track {
+    animation-duration: 15s;
+  }
+}
+
 /* =====================================================
    Branchen Section
    ===================================================== */
